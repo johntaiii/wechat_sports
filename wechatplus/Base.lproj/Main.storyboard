@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szv-nx-x4h">
+                                <rect key="frame" x="241" y="93" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wnr-8U-p20"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Que-eF-bGp">
+                                <rect key="frame" x="34" y="93" width="187" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保存成功后，先打开[健康]app，再打开微信运动查看" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eP6-hs-K97">
+                                <rect key="frame" x="27" y="153" width="267" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="NiY-dG-yQ6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.59999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="szv-nx-x4h" firstAttribute="top" secondItem="Que-eF-bGp" secondAttribute="bottom" constant="18" id="0ji-Yq-lOW"/>
+                            <constraint firstItem="szv-nx-x4h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="96" id="1SU-Dy-Yle"/>
+                            <constraint firstItem="Que-eF-bGp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="73" id="2jz-w0-2im"/>
+                            <constraint firstItem="eP6-hs-K97" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="8NO-sO-Kdj"/>
+                            <constraint firstItem="Que-eF-bGp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="OUW-Qy-wuL"/>
+                            <constraint firstItem="Que-eF-bGp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QNx-Fc-0qi"/>
+                            <constraint firstItem="eP6-hs-K97" firstAttribute="centerX" secondItem="szv-nx-x4h" secondAttribute="centerX" constant="-95.5" id="U5j-SZ-vlR"/>
+                            <constraint firstItem="Que-eF-bGp" firstAttribute="bottom" secondItem="szv-nx-x4h" secondAttribute="bottom" id="Wms-9U-oSi"/>
+                            <constraint firstItem="eP6-hs-K97" firstAttribute="top" secondItem="szv-nx-x4h" secondAttribute="bottom" constant="30" id="Wx5-bH-DYD"/>
+                            <constraint firstItem="Que-eF-bGp" firstAttribute="top" secondItem="szv-nx-x4h" secondAttribute="top" id="YuR-Qc-W4R"/>
+                            <constraint firstItem="Que-eF-bGp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="cUB-8k-mmq"/>
+                            <constraint firstItem="Que-eF-bGp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="dFq-aq-LyM"/>
+                            <constraint firstItem="Que-eF-bGp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="180" id="p1W-58-Kjm"/>
+                            <constraint firstItem="szv-nx-x4h" firstAttribute="top" secondItem="Que-eF-bGp" secondAttribute="bottom" constant="32" id="wK8-1H-1i8"/>
+                            <constraint firstItem="szv-nx-x4h" firstAttribute="leading" secondItem="Que-eF-bGp" secondAttribute="trailing" constant="20" id="zKB-5w-N58"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="QNx-Fc-0qi"/>
+                                <exclude reference="cUB-8k-mmq"/>
+                                <exclude reference="dFq-aq-LyM"/>
+                                <exclude reference="p1W-58-Kjm"/>
+                                <exclude reference="0ji-Yq-lOW"/>
+                                <exclude reference="wK8-1H-1i8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="confirmButton" destination="szv-nx-x4h" id="5K4-Kj-seK"/>
+                        <outlet property="inputField" destination="Que-eF-bGp" id="FtR-eU-PRs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="406" y="216"/>
+        </scene>
+    </scenes>
+</document>
